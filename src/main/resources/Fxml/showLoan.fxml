@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybooks.controller.ShowLoanController">
+    <children>
+        <TableView fx:id="loanTable" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="userIdColumn" prefWidth="100.0" text="User ID" />
+                <TableColumn fx:id="bookIdColumn" prefWidth="100.0" text="Book ID" />
+                <TableColumn fx:id="loanDateColumn" prefWidth="200.0" text="Loan Date" />
+                <TableColumn fx:id="dueDateColumn" prefWidth="200.0" text="Due Date" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

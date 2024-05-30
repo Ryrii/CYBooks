@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<VBox prefHeight="400.0" prefWidth="800.0" fx:id="searchBookBox" xmlns:fx="http://javafx.com/fxml" fx:controller="cybooks.controller.SearchBookController">
+    <HBox fx:id="hBox" >
+        <TextField fx:id="searchInput" promptText="ISBN du livre" />
+        <Button fx:id="searchBookButton" text="Rechercher" onAction="#handleSearchButton" />
+
+    </HBox>
+</VBox>

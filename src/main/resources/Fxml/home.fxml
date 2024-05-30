@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0"  xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybooks.controller.HomeController">
+   <children>
+      <Button layoutX="39.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleButtonAction1" prefHeight="26.0" prefWidth="139.0" style="-fx-cursor: hand;" text="Gérer les adhérents" />
+      <Button layoutX="311.0" layoutY="285.0" mnemonicParsing="false" onAction="#switchSceneToEnregistrerEmprunt" text="Enregistrer un emprunt" />
+      <Button onAction="#returnLoan" layoutX="311.0" layoutY="321.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="139.0" text="Rendre un Livre" />
+      <Button onAction="#showLoan" layoutX="311.0" layoutY="355.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="139.0" text="Gérer les emprunts" />
+      <AnchorPane prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <Text layoutX="371.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CY-BOOKS" />
+            <Text layoutX="380.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accueil" wrappingWidth="40.36993408203125" />
+            <ImageView fitHeight="92.0" fitWidth="102.0" layoutX="36.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@book.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="39.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="139.0" style="-fx-cursor: hand;" text="Ajouter un adhérent" />
+      <ImageView fitHeight="146.0" fitWidth="146.0" layoutX="308.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@empruntlivre2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="163.0" layoutX="36.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icone_utilisateur.png" />
+         </image>
+      </ImageView>
+      <Button onAction="#searchBook" layoutX="207.0" layoutY="458.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="139.0" text="Rechercher livre" />
+      <Button layoutX="568.0" layoutY="287.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="139.0" text="Statistiques" />
+      <ImageView fitHeight="146.0" fitWidth="157.0" layoutX="565.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@stat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="188.0" layoutX="30.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@shlef.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
